@@ -2,18 +2,15 @@
 
 public class Main {
     public static void main(String[] args) {
+        double kilometers = (100 * 1.609344);
 
 
-        double variable1 = 20.00;
-        double variable2 = 80.00;
+        int highScore = 50;
 
-        double result = variable1 + variable2 * 100.00;
-        System.out.println("Total is " + result);
-        double remainder = result % 40.00;
+        int health = 100;
 
-        boolean var = (remainder == 0.00) ? true : false;
+        System.out.println("healthScore" + highScore);
 
-        System.out.println("Output is " + var);
     }
 
 }
