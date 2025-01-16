@@ -2,14 +2,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        double kilometers = (100 * 1.609344);
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
 
+        int finalScore = score;
 
-        int highScore = 50;
+        if(gameOver) {
+            finalScore += (levelCompleted* bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was" + finalScore);
+        }
 
-        int health = 100;
-
-        System.out.println("healthScore" + highScore);
 
     }
 
