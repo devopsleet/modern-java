@@ -42,6 +42,9 @@ public class SecondClass {
 
         String s = (iSDomestic) ? "This car is domestic" : "This car is not domestic";
         System.out.println(s);
+
+        float my_ = 20.00f;
+
     }
 
 }
