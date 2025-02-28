@@ -15,6 +15,13 @@ public class Switch {
         String month = "JANUAR";
         System.out.println(month + " is in the " + getQuarter(month) + " quarter");
 
+        natoWords('B');
+
+        printDayOfWeek(0);
+
+//        int day = 0;
+//        String dayOfTheWeek = printDayOfWeek(day);
+
     }
 
     public static String getQuarter(String month) {
@@ -27,6 +34,27 @@ public class Switch {
                 yield badResponse;
             }
         };
+    }
+
+    public static void natoWords(char ch){
+        switch (ch) {
+            case 'A':
+                System.out.println("Char " + ch + ":" + " Able");
+                break;
+            default:
+                System.out.println("Letter not found");
+        }
+    }
+
+    public static void printDayOfWeek(int day) {
+        String dayOfWeek = switch (day) {
+          case 0 -> "Sunday";
+          case 1 -> "Monday";
+          case 2 -> "Tuesday";
+          case 3 -> {yield "Wednesday";}
+          default -> "Invalid Day";
+        };
+        System.out.println(day + " of the week is " + dayOfWeek);
     }
 
 }
