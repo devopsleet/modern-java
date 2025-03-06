@@ -11,6 +11,8 @@ public class TheForLoop {
             }
             System.out.println("100 at " + rate + "% interest = " + interestAmount);
         }
+
+        System.out.println("0 is " + (isPrime(0) ? "": "NOT") + " a prime number");
     }
 
     public static double calculateInterest( double amount, double interestRate) {
@@ -18,6 +20,13 @@ public class TheForLoop {
     }
 
     public static boolean isPrime ( int wholeNumber) {
-        return true;
+
+        if (wholeNumber <= 2){
+            return (wholeNumber == 2);
+
+
+
+
+        }return true;
     }
 }
