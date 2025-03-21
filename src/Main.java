@@ -3,12 +3,25 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        NewStudent max = new NewStudent("max", 21);
-        System.out.println(max);
+        int x; // known to all code within main
 
-        PrimarySchoolStudent jimmy = new PrimarySchoolStudent("jimmy", 8, "Gaga");
-        System.out.println(jimmy);
-//        Account gagansaccount = new Account();
+        x = 10;
+
+        if (x == 10) {
+            int y = 20;
+
+            x = y * 2;
+        }
+
+        //y = 100;
+
+        System.out.println(x);
+//        NewStudent max = new NewStudent("max", 21);
+//        System.out.println(max);
+//
+//        PrimarySchoolStudent jimmy = new PrimarySchoolStudent("jimmy", 8, "Gaga");
+//        System.out.println(jimmy);
+////        Account gagansaccount = new Account();
 //        //Account gagansaccount = new Account("12345", 1000.0, "Gagan", "email@email.com", "9876543210");
 //        gagansaccount.withdraw(100.0);
 //        gagansaccount.deposit(200);
