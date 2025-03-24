@@ -3,24 +3,36 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        float pi, r,a;
+        int x;
 
-        r = 10.8f;
+        byte b = 50;
+        b = (byte) (b *2);
 
-        pi = 3.14f;
+//        if ( x == 10){
+//            int y = 20;
+//
+//            x = y *2;
+//        }
 
-        a = pi * r * r;
-
-        System.out.println("Are of circle is " + a);
-
-        char ch1;
-
-        ch1 = 'X';
-
-        System.out.println("ch1 contains " + ch1);
-
-        ch1++; // increment ch1
-        System.out.println("ch1 is now " + ch1);
+        System.out.println(b);
+//        float pi, r,a;
+//
+//        r = 10.8f;
+//
+//        pi = 3.14f;
+//
+//        a = pi * r * r;
+//
+//        System.out.println("Are of circle is " + a);
+//
+//        char ch1;
+//
+//        ch1 = 'X';
+//
+//        System.out.println("ch1 contains " + ch1);
+//
+//        ch1++; // increment ch1
+//        System.out.println("ch1 is now " + ch1);
 
 //        int lightspeed;
 //        long days;
