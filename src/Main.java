@@ -3,22 +3,41 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        int lightspeed;
-        long days;
-        long seconds;
-        long distance;
+        float pi, r,a;
 
-        lightspeed = 186000;
+        r = 10.8f;
 
-        days = 1000;
+        pi = 3.14f;
 
-        seconds = days * 24 * 60 * 60;
+        a = pi * r * r;
 
-        distance = lightspeed   * seconds;
+        System.out.println("Are of circle is " + a);
 
-        System.out.print("In " + days);
-        System.out.print(" days light wil travel about ");
-        System.out.println(distance + " miles");
+        char ch1;
+
+        ch1 = 'X';
+
+        System.out.println("ch1 contains " + ch1);
+
+        ch1++; // increment ch1
+        System.out.println("ch1 is now " + ch1);
+
+//        int lightspeed;
+//        long days;
+//        long seconds;
+//        long distance;
+//
+//        lightspeed = 186000;
+//
+//        days = 1000;
+//
+//        seconds = days * 24 * 60 * 60;
+//
+//        distance = lightspeed   * seconds;
+//
+//        System.out.print("In " + days);
+//        System.out.print(" days light wil travel about ");
+//        System.out.println(distance + " miles");
 // li
 //        int x; // known to all code within main
 //
