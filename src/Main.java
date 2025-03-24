@@ -3,18 +3,28 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        int x;
+        byte b = 42;
+        char c = 'a';
+        short s = 1024;
+        int i = 50000;
+        float f = 5.67f;
+        double d = .1234;
 
-        byte b = 50;
-        b = (byte) (b *2);
+        double result = (f * b) + (i /c) - ( d * s);
+        System.out.println("result = " + result);
 
-//        if ( x == 10){
-//            int y = 20;
+//        int x;
 //
-//            x = y *2;
-//        }
-
-        System.out.println(b);
+//        byte b = 50;
+//        b = (byte) (b *2);
+//
+////        if ( x == 10){
+////            int y = 20;
+////
+////            x = y *2;
+////        }
+//
+//        System.out.println(b);
 //        float pi, r,a;
 //
 //        r = 10.8f;
