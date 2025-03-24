@@ -3,19 +3,36 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        int x; // known to all code within main
+        int lightspeed;
+        long days;
+        long seconds;
+        long distance;
 
-        x = 10;
+        lightspeed = 186000;
 
-        if (x == 10) {
-            int y = 20;
+        days = 1000;
 
-            x = y * 2;
+        seconds = days * 24 * 60 * 60;
+
+        distance = lightspeed   * seconds;
+
+        System.out.print("In " + days);
+        System.out.print(" days light wil travel about ");
+        System.out.println(distance + " miles");
+// li
+//        int x; // known to all code within main
+//
+//        x = 10;
+//
+//        if (x == 10) {
+//            int y = 20;
+//
+//            x = y * 2;
         }
 
         //y = 100;
 
-        System.out.println(x);
+        //System.out.println(x);
 //        NewStudent max = new NewStudent("max", 21);
 //        System.out.println(max);
 //
@@ -34,7 +51,7 @@ public class Main  extends Object{
 //        System.out.println("make = " + car.getMake());
 //        System.out.println("model = " + car.getModel());
 //        System.out.println("Doors = " + car.getDoors());
-    }
+    //}
 
 }
 
