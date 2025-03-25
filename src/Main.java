@@ -3,14 +3,36 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
+        // Java operators
+
+        int a = 1;
+        int b = 2;
+        int c;
+        int d;
+        c = ++b;
+        d = a++;
+        c++;
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+
         // Local variable type inference
-        var avg = 0.0;
-        System.out.println("Value of avg is " + avg);
+//        var avg = 0.0;
+//        System.out.println("Value of avg is " + avg);
+//
+//        int var = 1;
+//
+//        var k = 10 - var;
+//        System.out.println("Value of k is " + k);
+//        double d= 1.1 * 2L;
+//        long c = (long) (1  * d);
+//        System.out.println(c);
+//        System.out.println(d);
 
-        int var = 1;
+       // double d= 1.1;
 
-        var k = 10 - var;
-        System.out.println("Value of k is " + k);
+
 
 //        double m[][] = {
 //                {0*0, 1*0},
