@@ -3,22 +3,46 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        int twoD [] []  = new int[4][5];
-        int i,j, k = 0;
+        // Local variable type inference
+        var avg = 0.0;
+        System.out.println("Value of avg is " + avg);
 
-        for (i = 0; i <4; i++)
-            for(j = 0; j <5; j++) {
-                twoD[i][j] = k;
-                k++;
-            }
+        int var = 1;
 
-        for(i=0; i <4; i++) {
-            for(j=0; j<5; j++)
-                System.out.print(twoD[i][j]  + " ");
-            System.out.println();
-            //System.out.println();
-            //}
+        var k = 10 - var;
+        System.out.println("Value of k is " + k);
+
+//        double m[][] = {
+//                {0*0, 1*0},
+//                {0*1, 1*1}
+//        };
+//
+//        int i,j;
+//
+//        for(i=0; i<2; i++) {
+//            for (j = 0; j < 2; j++)
+//                System.out.print(m[i][j] + " ");
+//            System.out.println();
         }
+
+//        int twoD [] []  = new int[4][5];
+//        int i,j, k = 0;
+//
+//        for (i = 0; i <4; i++)
+//            for(j = 0; j <5; j++) {
+//                twoD[i][j] = k;
+//                k++;
+//            }
+//
+//        for(i=0; i <4; i++) {
+//            for(j=0; j<5; j++)
+//                System.out.print(twoD[i][j]  + " ");
+//            System.out.println();
+//            //System.out.println();
+//            //}
+//        }
+
+
 
 //        byte b = 42;
 //        char c = 'a';
@@ -104,7 +128,7 @@ public class Main  extends Object{
 //            int y = 20;
 //
 //            x = y * 2;
-        }
+
 
         //y = 100;
 
