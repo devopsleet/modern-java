@@ -3,15 +3,50 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
-        byte b = 42;
-        char c = 'a';
-        short s = 1024;
-        int i = 50000;
-        float f = 5.67f;
-        double d = .1234;
+        int twoD [] []  = new int[4][5];
+        int i,j, k = 0;
 
-        double result = (f * b) + (i /c) - ( d * s);
-        System.out.println("result = " + result);
+        for (i = 0; i <4; i++)
+            for(j = 0; j <5; j++) {
+                twoD[i][j] = k;
+                k++;
+            }
+
+        for(i=0; i <4; i++) {
+            for(j=0; j<5; j++)
+                System.out.print(twoD[i][j]  + " ");
+            System.out.println();
+            //System.out.println();
+            //}
+        }
+
+//        byte b = 42;
+//        char c = 'a';
+//        short s = 1024;
+//        int i = 50000;
+//        float f = 5.67f;
+//        double d = .1234;
+//
+//        double result = (f * b) + (i /c) - ( d * s);
+//        System.out.println("result = " + result);
+//
+//        // AutoArray
+//        int month_days[] = {31, 30,28};
+//
+//        System.out.println("January has " + month_days[0] + " days");
+//
+//        // Average an arry of values
+//        double nums[] = {10.1, 11.2, 12.3, 13.4};
+//        double res = 0;
+//
+//        int j;
+//        for (j = 0; j < 4; j++) {
+//            res = res + nums[j];
+//            System.out.println("Average is " + res/5);
+//        }
+
+
+        
 
 //        int x;
 //
