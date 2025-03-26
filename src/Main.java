@@ -3,19 +3,43 @@
 public class Main  extends Object{
     public static void main(String[] args) {
 
+        int month = 4;
+
+        String season;
+
+        if(month == 12 || month == 1 || month ==2)
+            season = "Winter";
+        else if(month == 3 || month ==4 || month ==5)
+            season = "Spring";
+        else if(month == 6 || month == 7 || month == 8)
+            season = "Summer";
+        else
+            season="Bogus Month";
+        System.out.println("April month is in the " + season);
+
+
+//        String binary[] = {
+//                "0000", "0001", "0010", "0100", "0101", "0110", "0111",
+//                "1000", "1001", "1010", "1100"
+//        };
+//
+//        int a = 3;
+//
+//        System.out.println("a = " + binary[a]);
+
         // Java operators
 
-        int a = 1;
-        int b = 2;
-        int c;
-        int d;
-        c = ++b;
-        d = a++;
-        c++;
-
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
+//        int a = 1;
+//        int b = 2;
+//        int c;
+//        int d;
+//        c = ++b;
+//        d = a++;
+//        c++;
+//
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
 
         // Local variable type inference
 //        var avg = 0.0;
