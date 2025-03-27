@@ -1,20 +1,59 @@
 //import java.sql.SQLOutput;
+class Stack {
+    int stck[] = new int[10];
+    int tos;
 
+    // Initialize top of stack
+    Stack() {
+        tos = -1; // Indicates an empty stack
+    }
+
+    void push(int item) {
+        if(tos==9){
+            System.out.println("Stack is full");
+        } else{
+            stck[++tos] = item;
+        }
+    }
+
+    int pop() {
+        if (tos< 0) {
+            System.out.println("Stack underflow");
+            return 0;
+        }
+        else{
+            return stck[tos--];
+        }
+    }
+}
 public class Main  extends Object{
     public static void main(String[] args) {
-        byte a = 64, b;
-        int i;
+        Stack mystack1 = new Stack();
+        Stack mystack2 = new Stack();
 
-        i = a << 2;
-        b= (byte) (a <<2);
-        b = (byte) 128;
-        System.out.println(a);
-        System.out.println("i = " + i +" and b = " + b);
+        for(int i=0; i < 10; i++) mystack1.push(i);
+        for(int i=10; i < 20; i++) mystack2.push(i);
 
-       int[] numbers = {10,20,30,40};
+        // Pop those numbers
+        System.out.println("Stack1");
+        for(int i=0; i <10; i++)
+            System.out.println(mystack1.pop());
 
-        for(int num: numbers)
-            System.out.println(num);
+        System.out.println("Stack 2");
+       // while(!mystack2.isEmpty())
+//        byte a = 64, b;
+//        int i;
+//
+//        i = a << 2;
+//        b= (byte) (a <<2);
+//        b = (byte) 128;
+//        System.out.println(a);
+//        System.out.println("i = " + i +" and b = " + b);
+//
+//       int[] numbers = {10,20,30,40};
+//
+//        for(int num: numbers)
+//            System.out.println(num);
 //            System.out.println(num + 1);
 
 
