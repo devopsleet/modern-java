@@ -2,20 +2,47 @@
 
 public class Main  extends Object{
     public static void main(String[] args) {
+        byte a = 64, b;
+        int i;
 
-        int month = 4;
+        i = a << 2;
+        b= (byte) (a <<2);
+        b = (byte) 128;
+        System.out.println(a);
+        System.out.println("i = " + i +" and b = " + b);
 
-        String season;
+       int[] numbers = {10,20,30,40};
 
-        if(month == 12 || month == 1 || month ==2)
-            season = "Winter";
-        else if(month == 3 || month ==4 || month ==5)
-            season = "Spring";
-        else if(month == 6 || month == 7 || month == 8)
-            season = "Summer";
-        else
-            season="Bogus Month";
-        System.out.println("April month is in the " + season);
+        for(int num: numbers)
+            System.out.println(num);
+//            System.out.println(num + 1);
+
+
+//            mybox = new Box();
+//        System.out.println(mybox);
+
+        //b = (byte) (a << 2);
+//
+//        byte b = 2;
+//        short s = 4;
+//
+//        int c = (short) (b * s);
+//        System.out.println(c);
+//
+
+//        int month = 4;
+//
+//        String season;
+//
+//        if(month == 12 || month == 1 || month ==2)
+//            season = "Winter";
+//        else if(month == 3 || month ==4 || month ==5)
+//            season = "Spring";
+//        else if(month == 6 || month == 7 || month == 8)
+//            season = "Summer";
+//        else
+//            season="Bogus Month";
+//        System.out.println("April month is in the " + season);
 
 
 //        String binary[] = {
