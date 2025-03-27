@@ -1,4 +1,25 @@
-//import java.sql.SQLOutput;
+// Method Overloading
+
+class OverloadDemo {
+    void test() {
+        System.out.println("No parameters");
+    }
+
+//    void test(int a) {
+//        System.out.println("a " + a);
+//    }
+
+    void test(int a, int b) {
+        System.out.println("a and b are " + a + " " + b);
+
+    }
+
+    double test(double a) {
+        System.out.println(a * a);
+        return a*a;
+    }
+}
+
 class Stack {
     int stck[] = new int[10];
     int tos;
@@ -9,38 +30,48 @@ class Stack {
     }
 
     void push(int item) {
-        if(tos==9){
+        if (tos == 9) {
             System.out.println("Stack is full");
-        } else{
+        } else {
             stck[++tos] = item;
         }
     }
 
     int pop() {
-        if (tos< 0) {
+        if (tos < 0) {
             System.out.println("Stack underflow");
             return 0;
-        }
-        else{
+        } else {
             return stck[tos--];
         }
     }
 }
-public class Main  extends Object{
+
+public class Main extends Object {
     public static void main(String[] args) {
+
+        OverloadDemo ob = new OverloadDemo();
+        double result;
+        int d = 10;
+
+        ob.test();
+        ob.test(d);
+        ob.test(10,20);
+        result = ob.test(123.25);
+
         Stack mystack1 = new Stack();
         Stack mystack2 = new Stack();
 
-        for(int i=0; i < 10; i++) mystack1.push(i);
-        for(int i=10; i < 20; i++) mystack2.push(i);
+        for (int i = 0; i < 10; i++) mystack1.push(i);
+        for (int i = 10; i < 20; i++) mystack2.push(i);
 
         // Pop those numbers
         System.out.println("Stack1");
-        for(int i=0; i <10; i++)
+        for (int i = 0; i < 10; i++)
             System.out.println(mystack1.pop());
 
         System.out.println("Stack 2");
-       // while(!mystack2.isEmpty())
+        // while(!mystack2.isEmpty())
 //        byte a = 64, b;
 //        int i;
 //
@@ -120,8 +151,7 @@ public class Main  extends Object{
 //        System.out.println(c);
 //        System.out.println(d);
 
-       // double d= 1.1;
-
+        // double d= 1.1;
 
 
 //        double m[][] = {
@@ -135,7 +165,7 @@ public class Main  extends Object{
 //            for (j = 0; j < 2; j++)
 //                System.out.print(m[i][j] + " ");
 //            System.out.println();
-        }
+    }
 
 //        int twoD [] []  = new int[4][5];
 //        int i,j, k = 0;
@@ -153,7 +183,6 @@ public class Main  extends Object{
 //            //System.out.println();
 //            //}
 //        }
-
 
 
 //        byte b = 42;
@@ -181,8 +210,6 @@ public class Main  extends Object{
 //            System.out.println("Average is " + res/5);
 //        }
 
-
-        
 
 //        int x;
 //
@@ -242,9 +269,9 @@ public class Main  extends Object{
 //            x = y * 2;
 
 
-        //y = 100;
+    //y = 100;
 
-        //System.out.println(x);
+    //System.out.println(x);
 //        NewStudent max = new NewStudent("max", 21);
 //        System.out.println(max);
 //
@@ -299,6 +326,6 @@ class PrimarySchoolStudent extends NewStudent {
 
     @Override
     public String toString() {
-        return parentName +  "s kids " +  super.toString();
+        return parentName + "s kids " + super.toString();
     }
 }
