@@ -50,27 +50,38 @@ class Stack {
 public class Main extends Object {
     public static void main(String[] args) {
 
-        OverloadDemo ob = new OverloadDemo();
-        double result;
-        int d = 10;
+        int[] nums = {1,2,3,4,5,6,7,8,9,10};
+        int sum = 0;
 
-        ob.test();
-        ob.test(d);
-        ob.test(10,20);
-        result = ob.test(123.25);
+        //for(int i = 0; i < 10; i++) sum += nums[i];
+        for(int num : nums){
+            System.out.println(" The value of num is " + num);
+            sum = sum + num;
+        }
+            //sum = sum + num;
+        System.out.println(sum);
 
-        Stack mystack1 = new Stack();
-        Stack mystack2 = new Stack();
-
-        for (int i = 0; i < 10; i++) mystack1.push(i);
-        for (int i = 10; i < 20; i++) mystack2.push(i);
-
-        // Pop those numbers
-        System.out.println("Stack1");
-        for (int i = 0; i < 10; i++)
-            System.out.println(mystack1.pop());
-
-        System.out.println("Stack 2");
+//        OverloadDemo ob = new OverloadDemo();
+//        double result;
+//        int d = 10;
+//
+//        ob.test();
+//        ob.test(d);
+//        ob.test(10,20);
+//        result = ob.test(123.25);
+//
+//        Stack mystack1 = new Stack();
+//        Stack mystack2 = new Stack();
+//
+//        for (int i = 0; i < 10; i++) mystack1.push(i);
+//        for (int i = 10; i < 20; i++) mystack2.push(i);
+//
+//        // Pop those numbers
+//        System.out.println("Stack1");
+//        for (int i = 0; i < 10; i++)
+//            System.out.println(mystack1.pop());
+//
+//        System.out.println("Stack 2");
         // while(!mystack2.isEmpty())
 //        byte a = 64, b;
 //        int i;
