@@ -6,7 +6,7 @@ public class SampleSwitch {
                     System.out.println("i is zero");
                     break;
                 case 1:
-                    System.out.println("i is one");
+                    System.out.println("i is  one");
                     break;
                 case 2:
                     System.out.println("i is 2");
