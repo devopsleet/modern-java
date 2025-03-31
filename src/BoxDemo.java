@@ -28,6 +28,7 @@ public class BoxDemo {
 
         vol = mybox2.volume();
         System.out.println("Volume is " + vol);
+        System.out.println();
 
         //mybox.setDim(10,20,15);
 

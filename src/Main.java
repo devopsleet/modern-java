@@ -50,16 +50,91 @@ class Stack {
 public class Main extends Object {
     public static void main(String[] args) {
 
-        int[] nums = {1,2,3,4,5,6,7,8,9,10};
-        int sum = 0;
 
-        //for(int i = 0; i < 10; i++) sum += nums[i];
-        for(int num : nums){
-            System.out.println(" The value of num is " + num);
-            sum = sum + num;
-        }
+//
+//        boolean t = true;
+//
+//        System.out.println("Before the return");
+//
+//        //if(t)
+//        return;
+//
+//        System.out.println("After the return");
+////
+////        int sum = 0;
+//
+//        int[][] nums= new int[3][5];
+//
+//        for(int i=0; i<3; i++)
+//            for(int j =0; j<5; j++) {
+//                nums[i][j] = (i+1) * (j+1);
+//            }
+//
+//        // use enhanced for loop
+//        for(int[] x : nums)
+//            for(int y : x) {
+//                System.out.println("Value of y is " + y);
+//                sum = sum + y;
+//            }
+//        System.out.println("Summation is " + sum);
+//
+//        boolean found = false;
+//
+//        int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+//        int val = 5;
+//        for(var x : numbers) {
+//            if (x == val) {
+//                found = true;
+//                break;
+//            }
+//        }
+//
+//        if(found) System.out.println("Value found");
+//
+//        System.out.println("Value of x: ");
+//        for(var i = 2.5; i < 100.0; i = i * 2)
+//            System.out.print(" i is " + i);
+//
+//        System.out.println();
+//
+//        boolean t = true;
+//        first: {
+//            second: {
+//            third: {
+//                System.out.println("Before the break");
+//                 if (t) break second;
+//
+//            }
+//                System.out.println("This won't execute");
+//            }
+//            System.out.println("This is after second break");
+//
+//            System.out.println();
+//        }
+
+
+
+
+
+
+
+
+//        int[] nums = {1,2,3,4,5,6,7,8,9,10};
+//        int sum = 0;
+//
+//        //for(int i = 0; i < 10; i++) sum += nums[i];
+//        for(int num : nums){
+//            System.out.println(" The value of num is " + num);
+//            num = num * 10;
+////            sum = sum + num;
+////            if(num == 5) break;
+//        }
+//        System.out.println();
+//
+//        for(int x: nums)
+//            System.out.print(x);
             //sum = sum + num;
-        System.out.println(sum);
+        //System.out.println(sum);
 
 //        OverloadDemo ob = new OverloadDemo();
 //        double result;
