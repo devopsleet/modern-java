@@ -47,8 +47,28 @@ class Stack {
     }
 }
 
+class Test {
+    int a,b;
+
+    Test(int i, int j) {
+        a= i;
+        b = j;
+    }
+
+    boolean equalTo(Test o) {
+        if(o.a == a && o.b == b) return true;
+        else return false;
+    }
+}
 public class Main extends Object {
     public static void main(String[] args) {
+
+        Test obj1 = new Test(100, 22);
+        Test obj2 = new Test(100,22);
+        Test obj3 = new Test(-1, -1);
+
+        System.out.println(" obj1 == obj2 equality is " + obj1.equalTo(obj2));
+        System.out.println(" obj1 is not equal to obj3 so the returned value is " + obj1.equalTo(obj3));
 
 
 //
