@@ -21,8 +21,8 @@ class OverloadDemo {
 }
 
 class Stack {
-    int stck[] = new int[10];
-    int tos;
+    private int stck[] = new int[10];
+    private int tos;
 
     // Initialize top of stack
     Stack() {
