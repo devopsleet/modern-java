@@ -49,6 +49,7 @@ class Stack {
 
 class Test {
     int a,b;
+    int x;
 
     Test(int i, int j) {
         a= i;
@@ -59,6 +60,16 @@ class Test {
         if(o.a == a && o.b == b) return true;
         else return false;
     }
+
+    Test(int i) {
+        x = i;
+    }
+
+    Test incByTen(){
+        Test temp = new Test(x+10);
+        return temp;
+    }
+
 }
 public class Main extends Object {
     public static void main(String[] args) {
@@ -67,8 +78,16 @@ public class Main extends Object {
         Test obj2 = new Test(100,22);
         Test obj3 = new Test(-1, -1);
 
-        System.out.println(" obj1 == obj2 equality is " + obj1.equalTo(obj2));
-        System.out.println(" obj1 is not equal to obj3 so the returned value is " + obj1.equalTo(obj3));
+        Test obj4 = new Test(10);
+        Test obj5;
+
+        obj5 = obj4.incByTen();
+
+        System.out.println("The values are " + obj4.x + " and " + obj5.x);
+
+
+        System.out.println("obj1 == obj2 equality is " + obj1.equalTo(obj2));
+        System.out.println("obj1 is not equal to obj3 so the returned value is " + obj1.equalTo(obj3));
 
 
 //
