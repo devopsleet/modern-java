@@ -10,10 +10,14 @@ public class StringDemo {
 
         if(strOb1.equals(strOb3)) System.out.println("Both the objects are equal");
 
-        String[]  str = {"One", "Two", "Three"};
 
+
+        String[]  str = {"One", "Two", "Three"};
+        //String[] str2 = {"One","five", "six"};
         for(String s : str){
             System.out.println(s);
         }
+            //System.out.println(s);
+
     }
 }
