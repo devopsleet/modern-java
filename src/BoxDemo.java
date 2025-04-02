@@ -3,17 +3,43 @@ class Box {
     double height;
     double depth;
 
+    Box(Box ob){
+        width = ob.width;
+        height = ob.height;
+        depth = ob.depth;
+    }
+
     double volume() {
         //System.out.println("Volume is ");
         return width * height * depth;
     }
         //parameterized constructor
         Box(double width, double height, double depth){
-            System.out.println("Constructing the box constructor");
+          //  System.out.println("Constructing the box constructor");
     //void setDim(double w, double h, double d) {
             this.width = width;
             this.height = height;
             this.depth = depth;
+
+    }
+
+    Box() {
+        width = -1;
+        height = -1;
+        depth = -1;
+    }
+
+
+}
+
+class BoxWeight extends Box {
+    double weight;
+
+    BoxWeight(double w, double h, double d, double m) {
+        width = w;
+        height = h;
+        depth = d;
+        weight = m;
 
     }
 }

@@ -28,6 +28,7 @@ public class SimpleInheritance {
         System.out.println();
 
         subOb.i = 7;
+
         subOb.j = 8;
         subOb.k = 9;
 
