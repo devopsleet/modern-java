@@ -41,6 +41,7 @@ class BoxWeight extends Box {
         depth = d;
         weight = m;
 
+
     }
 }
 

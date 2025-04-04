@@ -1,5 +1,11 @@
 class A {
-    int i, j;
+    int i;
+    int j;
+
+    void setij(int x, int y) {
+        i = x;
+        j = y;
+    }
     void showij() {
         System.out.println("i and j: " + i + " " + j);
     }
@@ -7,6 +13,7 @@ class A {
 
 class B extends A {
     int k;
+    int total;
 
     void showk() {
         System.out.println("print k: " + k);
