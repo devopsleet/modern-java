@@ -31,6 +31,9 @@ class BoxW extends NBox{
     }
 }
 
+
+
+
 public class PracticeInheritance {
     public static void main(String[] args) {
 
