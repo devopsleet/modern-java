@@ -1,7 +1,7 @@
 class NewBox {
-    double width;
-    double height;
-    double depth;
+    private double width;
+    private double height;
+    private double depth;
 
     // Constructor
     NewBox(NewBox ob) {
@@ -37,12 +37,14 @@ class NewBoxWeight extends NewBox {
     double weight;
 
     NewBoxWeight(double w, double h, double d, double m) {
-        width = w;
-        height = h;
-        depth = d;
+        super(w,h,d);
+//        width = w;
+//        height = h;
+//        depth = d;
         weight = m;
 
     }
+
 
 
 
