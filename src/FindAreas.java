@@ -1,4 +1,4 @@
-class Figure{
+abstract class Figure{
     double dim1, dim2;
 
     Figure(double a, double b) {
@@ -6,10 +6,10 @@ class Figure{
         dim2 = b;
     }
 
-    double area() {
-        System.out.println("Area for figure is undefined.");
-        return 0;
-    }
+    abstract double area();
+//        System.out.println("Area for figure is undefined.");
+//        return 0;
+//    }
 }
 
 class Rectangle extends Figure {
@@ -35,7 +35,7 @@ class Triangle extends Figure {
 }
 public class FindAreas {
     public static void main(String[] args) {
-        Figure f = new Figure(10,10);
+        //Figure f = new Figure(10,10);
         Rectangle r = new Rectangle(9,5);
         Triangle t = new Triangle(10,8);
 
@@ -47,7 +47,7 @@ public class FindAreas {
         figref = t;
         System.out.println("Area is " + figref.area());
 
-        figref = f;
-        System.out.println("Area is " + figref.area());
+//        figref = f;
+//        System.out.println("Area is " + figref.area());
     }
 }
