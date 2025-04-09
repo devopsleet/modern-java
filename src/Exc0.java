@@ -1,8 +1,14 @@
 public class Exc0 {
     static void subroutine() {
 
-        int d = 0;
-        int a = 42 / d;
+        try {
+            int d = 0;
+            int a = 42 / d;
+            System.out.println("This will not be printed");
+        } catch (ArithmeticException e) {
+            System.out.println("Divison by Zero");
+        }
+        System.out.println("After catch statement");
 
     }
 
