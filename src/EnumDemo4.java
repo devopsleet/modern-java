@@ -16,5 +16,7 @@ public class EnumDemo4 {
         ap = Apple4.RedDel;
         ap2 = Apple4.GoldenDel;
         ap3 = Apple4.RedDel;
+
+        ap
     }
 }
