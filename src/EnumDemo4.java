@@ -18,5 +18,7 @@ public class EnumDemo4 {
         ap3 = Apple4.RedDel;
 
         System.out.println(ap.equals(ap3));
+
+
     }
 }
