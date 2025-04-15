@@ -14,6 +14,7 @@ class Balance {
             System.out.println("--->");
         }
         System.out.println(name + ": $ " + bal);
+        System.out.println();
     }
 }
 public class AccountBalance {
