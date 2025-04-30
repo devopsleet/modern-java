@@ -6,6 +6,20 @@ public class Cast {
         b = (byte) (b * 2);
 
         System.out.println(b);
+
+        float c = 123.43f;
+        int d = (int) c;
+        System.out.println(d);
+
+        int e = (int) c;
+
+        int twoD[][] = new int[2][];
+        twoD[0] = new int[3];
+        twoD[1] = new int[2];
+
+
+
+
 //        int a = 129;
 //        byte b;
 //
