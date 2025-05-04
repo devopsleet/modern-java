@@ -25,5 +25,7 @@ public class SimpGen {
 
         System.out.println(v);
         System.out.println(s);
+
+        System.out.println();
     }
 }
