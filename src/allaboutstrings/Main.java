@@ -1,14 +1,34 @@
 package allaboutstrings;
 
+import com.sun.security.jgss.GSSUtil;
+
 public class Main {
     public static void main(String[] args) {
 
         printInformation("Hello World");
-        String str = "hello world";
+        String str = "hello World";
         System.out.printf("Index of l = %d %n",str.indexOf('l'));
         System.out.printf("LastIndex of l = %d %n", str.lastIndexOf('l'));
         System.out.printf("Index of l = %d %n",str.indexOf('l',3));
         System.out.printf("LastIndex of l = %d %n", str.lastIndexOf('l',8));
+        String helloWorldLower = str.toLowerCase();
+        if (str.equals(helloWorldLower)) {
+            System.out.println("Values matches exactly");
+        }
+        if(str.equalsIgnoreCase(helloWorldLower)) {
+            System.out.println("values mach ignoring cases");
+        }
+
+        if(str.startsWith("hello")) {
+            System.out.println(str + " startes with hello");
+        }
+        if(str.endsWith("World")) {
+            System.out.println(str + " ends with World");
+        }
+        if(str.contains(" ")) {
+            System.out.println(str + " contains space");
+        }
+
 
     }
 
