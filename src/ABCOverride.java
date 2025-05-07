@@ -26,7 +26,7 @@ class B2 extends A2 {
 }
 
 
-public class Override {
+public class ABCOverride {
     public static void main(String[] args) {
         B2 b2 = new B2(1,2,3);
         b2.show();
