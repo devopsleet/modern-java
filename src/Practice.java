@@ -61,6 +61,13 @@ public class Practice {
         char myChar = 'D';
         System.out.println(myChar);
 
+        char myChar1 = 'D';
+        char myChar2 = '\u0044';
+        char myChar3 = 68;
+        System.out.println(myChar2 + myChar1 + myChar3);
+
+        String myString = "This is a String";
+        System.out.println(myString);
 
 
 
