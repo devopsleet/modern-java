@@ -1,5 +1,18 @@
 public class ByteShift {
     public static void main(String[] args) {
+
+        for(int i=0; i <5; i++) {
+            switch (i) {
+                case 0:
+                case 1:
+                case 4:
+                    System.out.println("i is less than 5");
+            }
+
+
+                
+            }
+
 //        byte a = 64, b;
 //        int i;
 //
@@ -8,29 +21,29 @@ public class ByteShift {
 //        System.out.println("original value = "  + a);
 //        System.out.println("Int value = " + i);
 //        System.out.println("Byte value = " + b);
-        int i;
-        int num = 0XFFFFFFE;
-        System.out.println(num);
-        for (i=0; i <4; i++) {
-            num = num << 1;
-            System.out.println(num);
-        }
-
-        int e = 10;
-        int c = 0;
-        if (c == 1  & e++ < 10) {
-            System.out.println("yes");
-        }
-
-        if(5 == 5) {
-            System.out.println("True");
-        }
-
-        int month = 4;
-
-        if (month ==4) {
-            System.out.println("month 4 is spring");
-        }
+//        int i;
+//        int num = 0XFFFFFFE;
+//        System.out.println(num);
+//        for (i=0; i <4; i++) {
+//            num = num << 1;
+//            System.out.println(num);
+//        }
+//
+//        int e = 10;
+//        int c = 0;
+//        if (c == 1  & e++ < 10) {
+//            System.out.println("yes");
+//        }
+//
+//        if(5 == 5) {
+//            System.out.println("True");
+//        }
+//
+//        int month = 4;
+//
+//        if (month ==4) {
+//            System.out.println("month 4 is spring");
+//        }
     }
 }
 
