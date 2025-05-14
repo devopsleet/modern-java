@@ -16,12 +16,25 @@ class Box {
         this.height = height;
         this.depth = depth;
     }
+
+    // constructor with no params
+    Box() {
+        width = height = depth = -1;
+    }
+
+    Box(double len) {
+        width = height = depth = len;
+    }
+
+//    double volume() {
+//        return width * depth * height;
+//    }
 }
 
 
 class BoxDemo {
     public static void main(String[] args) {
-        Box mybox = new Box(10,12,13);
+        Box mybox = new Box(10);
        // double vol;
 
         //mybox.setDim(10,12,13);
