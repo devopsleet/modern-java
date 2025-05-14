@@ -1,3 +1,44 @@
+class Box {
+    double width = 2;
+    double height;
+    double depth;
+
+    double volume() {
+        return width * height * depth;
+        //System.out.println("Volume is ");
+        //System.out.println(width * height * depth);
+    }
+
+    //void setDim(double w, double h, double d) {
+    Box(double width, double height, double depth) {
+        System.out.println("Constructing Box");
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
+    }
+}
+
+
+class BoxDemo {
+    public static void main(String[] args) {
+        Box mybox = new Box(10,12,13);
+       // double vol;
+
+        //mybox.setDim(10,12,13);
+
+//        mybox.width = 5;
+//        mybox.height = 10;
+//        mybox.depth = 15;
+
+        System.out.println(mybox.volume());
+        //mybox.volume();
+
+//        vol = mybox.width * mybox.height * mybox.depth;
+//        System.out.println(vol);
+    }
+}
+
+
 //class Box
 
 
