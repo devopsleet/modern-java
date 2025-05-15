@@ -1,27 +1,27 @@
-class Recursion {
+class Rec {
     int values[];
 
-    Recursion(int i){
+    Rec(int i) {
         values = new int[i];
     }
 
-    void printArray(int i){
-        if(i==0) return;
+    void printArray(int i) {
+        if ( i == 1) return;
         else printArray(i-1);
-        System.out.println("[" + (i-1) + "]" + values[i-1]);
+        System.out.println(values[i-1]);
     }
-
-
 }
 
-public class RecTest {
+class RecTest {
     public static void main(String[] args) {
-        Recursion r = new Recursion(10);
 
-        for(int x = 0; x < 10; x++) r.values[x] = x;
+        Rec r = new Rec(10);
+        System.out.println(r.values.length);
+        for(int i=0; i < r.values.length; i++) {
+            r.values[i] = i;
+        }
 
         r.printArray(10);
+
     }
-
-
 }
