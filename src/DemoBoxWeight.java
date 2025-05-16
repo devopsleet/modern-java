@@ -18,8 +18,10 @@ class MyBoxWeight extends MyBox {
 }
 public class DemoBoxWeight {
     public static void main(String[] args) {
+        var b = new MyBox();
         var mbox = new MyBoxWeight(10,20,30, 40);
-        System.out.println("The volume of the box is " + mbox.volume());
-        System.out.println("the wight of the box is " + mbox.weight);
+        b = mbox;
+        System.out.println("The volume of the box is " + b.volume());
+        System.out.println("the wight of the box is " + b.weight);
     }
 }
