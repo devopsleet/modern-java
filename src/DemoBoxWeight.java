@@ -22,6 +22,6 @@ public class DemoBoxWeight {
         var mbox = new MyBoxWeight(10,20,30, 40);
         b = mbox;
         System.out.println("The volume of the box is " + b.volume());
-        System.out.println("the wight of the box is " + b.weight);
+        System.out.println("the wight of the box is ");
     }
 }

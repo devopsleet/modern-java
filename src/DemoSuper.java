@@ -20,6 +20,6 @@ class BoxWeight extends MyNewBox {
 
 public class DemoSuper {
     public static void main(String[] args) {
-        BoxWeight bx = new BoxWeight()
+
     }
 }
