@@ -8,13 +8,17 @@ public class Exc0 {
         } catch (ArithmeticException e) {
             System.out.println("Divison by Zero");
         }
-        System.out.println("After catch statement");
+      System.out.println("After catch statement");
 
     }
 
     public static void main(String[] args) {
 
         Exc0.subroutine();
+        Exc0.subroutine();
+        Exc0.subroutine();
+        Exc0.subroutine();
+        //Exc0.subroutine2();
 
     }
 }

@@ -10,6 +10,8 @@ class HandleError {
             try {
                 b = r.nextInt();
                 c = r.nextInt();
+                System.out.println(b);
+                System.out.println(c);
                 a = 12345 / (b/c);
 
             } catch (ArithmeticException e) {
