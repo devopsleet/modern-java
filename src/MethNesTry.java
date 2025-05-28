@@ -38,6 +38,7 @@ public class MethNesTry {
             int a = 1 / 0; // causes ArithmeticException
         } finally {
             System.out.println("In finally block");
+            System.out.println("");
         }
     }
 }
