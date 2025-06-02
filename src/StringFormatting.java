@@ -23,7 +23,7 @@ public class StringFormatting {
             System.out.println("printing " + i);
         }
 
-        String formattedString = String.format("Your age is %d", age);
+        String formattedString = String.format("Your age is %.2d", age);
         System.out.println(formattedString);
 
 
