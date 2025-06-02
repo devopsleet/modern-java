@@ -1,6 +1,7 @@
 package dev.lpa;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -42,5 +43,10 @@ public class ArrayChallenge {
             System.out.println("--->" + pass++ + Arrays.toString(sortedArray));
         }
         return sortedArray;
+       // ArrayList <List> = new ArrayList<>()
+
+//                Double d = 1275d;
+//                Integer i = 88;
+//                Float f = 90.2f;
     }
 }
