@@ -5,7 +5,9 @@ public class AutoBox2 {
     }
 
     public static void main(String[] args) {
-        Integer iOb = m(100);
-        System.out.println(iOb);
+        Integer iOb = 1000;
+
+        int i = iOb.byteValue();
+        System.out.println(i);
     }
 }
