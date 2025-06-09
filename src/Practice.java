@@ -69,6 +69,10 @@ public class Practice {
         String myString = "This is a String";
         System.out.println(myString);
 
+        String s1 = "hello";
+        Class<?> cls = s1.getClass();
+        System.out.println(cls);
+
 
 
     }

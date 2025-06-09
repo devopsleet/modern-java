@@ -16,6 +16,13 @@ public class Cast {
         int twoD[][] = new int[2][];
         twoD[0] = new int[3];
         twoD[1] = new int[2];
+        twoD[3] = new int[3];
+        twoD[4] = new int[4];
+        twoD[5] = new int[5];
+        twoD[6] = new int[6];
+        twoD[7] = new int[7];
+
+
 
 
 
