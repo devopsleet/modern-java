@@ -3,6 +3,7 @@ import java.io.IOException;
 public class Switch {
     public static void main(String[] args) {
 
+
         int switchValue = 1;
 
         switch (switchValue) {
