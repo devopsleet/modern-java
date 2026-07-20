@@ -34,5 +34,17 @@ public class FinallyDemo {
 
         procB();
         procC();
+        System.out.println("Consignor");
+        System.out.println("SKU");
+        System.out.println("Description");
+        System.out.println("Items in Stock");
+        System.out.println("Qty Sold");
+        System.out.println("Sold Date");
+        System.out.println("Invoice #");
+        System.out.println("Hammer Price");
+        //procD();
+        //procE();
+        //procF();
+
     }
 }
