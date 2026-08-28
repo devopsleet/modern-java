@@ -1,6 +1,5 @@
-public class Example {
-    public static class ListNode {
-        int val;
-
+class Example {
+    public static void main(String[] args) {
+        System.out.println("This is a simple java program.");
     }
 }
