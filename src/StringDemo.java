@@ -1,23 +1,15 @@
 public class StringDemo {
     public static void main(String[] args) {
-        String strOb1 = "First String";
-        String strOb2 = "Second String";
-        String strOb3 = strOb1;
 
-        System.out.println("the length of the strOb1: " + strOb1.length());
+        String myString = "This is a String";
+        System.out.println(myString);
 
-        System.out.println("Char at index 3 in strOb1 is " + strOb1.charAt(3));
-
-        if(strOb1.equals(strOb3)) System.out.println("Both the objects are equal");
-
-
-
-        String[]  str = {"One", "Two", "Three"};
-        //String[] str2 = {"One","five", "six"};
-        for(String s : str){
-            System.out.println(s);
-        }
             //System.out.println(s);
+
+        myString = "I wish I had \u00241,000,000 dollars";
+        System.out.println(myString);
+
+        String numberString = "250.55"; numberString = numberString + "10.90";
 
     }
 }
