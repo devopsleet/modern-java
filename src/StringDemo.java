@@ -11,5 +11,14 @@ public class StringDemo {
 
         String numberString = "250.55"; numberString = numberString + "10.90";
 
+        char firstCharValue = 'A', secondCharValue = 'B';
+
+        System.out.println(firstCharValue + secondCharValue);
+
+        int result = firstCharValue % 2;
+        System.out.println(result);
+
+
+
     }
 }
