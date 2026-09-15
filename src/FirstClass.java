@@ -19,5 +19,12 @@ public class FirstClass {
         System.out.println("ch1 is now " + ch1);
 
         System.out.println("Area of circle is " + a);
+
+        char x = '\141';
+        System.out.println("The value of octal char is " + x);
+
+        int y = 0141;
+        System.out.println("The value of integer y is " + y);
+
     }
 }
