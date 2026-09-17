@@ -33,5 +33,18 @@ public class Hello {
             System.out.println("This is not supposed to run");
         }
 
+        String makeOfCar = "Vollkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+        System.out.println(isDomestic);
+
+        double d = 20.00;
+        double d2 = 80.00;
+        double result = (d  + d2) * 100.00;
+        result = result % 40.00;
+        boolean flag = (result == 0.00)? true : false;
+        System.out.println(flag);
+
+
+
     }
 }
