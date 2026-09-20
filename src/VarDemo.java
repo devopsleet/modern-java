@@ -13,5 +13,12 @@ public class VarDemo {
         var k = -var;
         System.out.println("Value of k is " + k);
 
+        int num1 = 7;
+        int a = ++num1;
+        System.out.println(a);
+        System.out.println(num1);
+
+
+
     }
 }

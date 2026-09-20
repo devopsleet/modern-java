@@ -9,6 +9,9 @@ public class MainChallenge {
 //        int score = 10000;
         int levelCompleted = 5;
         int bonus = 200;
+
+        long x = 1000;
+        int y = (int) x;
 //
 //        int finalScore = score;
 //
@@ -30,6 +33,9 @@ public class MainChallenge {
 //        int bonus = 200;
 
         int finalScore = score;
+
+//        long maxVal = 2_147_483_648;
+//        System.out.println(maxVal);
 
         if (gameOver)
         {
