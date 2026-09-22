@@ -1,10 +1,14 @@
 public class Demo {
 
     public static void main(String[] args) {
-        int x = 6, y = 6;
 
-        boolean res = x <= y;
-        System.out.println(res);
+        int x = 7;
+        int y = 5;
+        int a = 5;
+        int b = 9;
+
+        boolean result = a > b;
+        System.out.println(!result);
 
 
     }
