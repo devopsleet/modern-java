@@ -1,37 +1,30 @@
-class Stack {
-    private int stck[] = new int[10];
-    private int tos;
+// This class defines an integer stack that can hold 10 values
 
-    // Initilaize
+class Stack {
+    int[] stck = new int[10];
+    int tos;
+
+    // constructor
     Stack() {
         tos = -1;
     }
 
-    // push an item
+    // Push an item onto the stack
     void push(int item) {
-        if(tos==9)
+        if (tos == 9)
             System.out.println("Stack is full");
-        else stck[++tos] = item;
+        else
+            stck[++tos] = item;
     }
 
-    // Pop an item
-
+    // Pop an item from the stack
     int pop() {
         if (tos < 0) {
-            System.out.println("Stack underflow");
+            System.out.println("Stack undeflow");
             return 0;
-        }
-        else
+        } else
             return stck[tos--];
     }
 
-}
 
-class TestStack {
-    public static void main(String[] args) {
-
-        Stack mystack = new Stack();
-
-
-    }
 }
