@@ -1,6 +1,7 @@
-public class UseStatic {
+class UseStatic {
+    // static variables
     static int a = 3;
-    static int b;
+    static int b = a * 4;
 
     static void meth(int x) {
         System.out.println("x = " + x);
@@ -8,11 +9,13 @@ public class UseStatic {
         System.out.println("b = " + b);
     }
 
-    static  {
-        System.out.println("static block initiated");
-        b = a * 4;
+    static {
+        System.out.println("Static block Initialized");
     }
+
     public static void main(String[] args) {
         meth(42);
     }
+
+
 }
