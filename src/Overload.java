@@ -4,20 +4,20 @@ class OverloadDemo {
     }
 
     void test(int a, int b) {
-        System.out.println(" a and b: a + b");
+        System.out.println("a and b: " + a + " " + b);
     }
 
     void test(double a) {
-        System.out.println("Double a : " + a);
+        System.out.println("Inside test(double) a: " + a);
     }
 }
 
-public class Overload {
+class Overload{
     public static void main(String[] args) {
-        OverloadDemo od = new OverloadDemo();
+        int i = 88;
 
-        od.test(10);
-        od.test(123.5);
-        od.test(12);
+        OverloadDemo ob = new OverloadDemo();
+        // this will invoke test(double)
+        ob.test(i);
     }
 }
