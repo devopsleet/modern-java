@@ -22,6 +22,8 @@ public class Demo {
             }
         }
 
+        int random = (int) (Math.random() * 100);
+        System.out.println("Random value is " + random);
 
     }
 }
