@@ -1,49 +1,27 @@
-
-//class Calculator {
-//
-//    int a;
-//
-//    public int add(int n1) {
-//        System.out.println("addition");
-//
-//        return 0;
-//    }
-//
-//}
-
-class Computer {
-
-    public void playMusic() {
-
-        System.out.println("Playing Music");
-    }
-
-    public String getMeAPen(int cost) {
-
-        return "Pen";
-    }
-}
-
 public class Demo {
-
     public static void main(String[] args) {
+        int nums[] = {3,4,5,7};
+        System.out.println(nums[1]);
 
-        Computer obj = new Computer();
+        int nums1[] = new int[4];
+        System.out.println(nums[3]);
 
-        obj.playMusic();
-        String str = obj.getMeAPen(10);
+        int nums2d[][] = new int[3][4];
 
-        System.out.println();
+        // enhanced for-loop
+        for(int x[]: nums2d) {
+            for (int val: x) {
+                System.out.println(val);
+            }
+        }
 
-//        Calculator calc = new Calculator(int num1, int num2);
-//
-//        int result = calc.add();
-
-        System.out.println();
+        // local type inference
+        for(var rows: nums2d) {
+            for(var cols: rows) {
+                System.out.println(cols);
+            }
+        }
 
 
     }
 }
-
-// Object Oriented Programming
-// Object - Properties and Behaviours
