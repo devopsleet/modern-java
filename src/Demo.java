@@ -6,7 +6,7 @@ public class Demo {
         int nums1[] = new int[4];
         System.out.println(nums[3]);
 
-        int nums2d[][] = new int[3][4];
+        int nums2d[][] = new int[3][];
 
         // enhanced for-loop
         for(int x[]: nums2d) {
